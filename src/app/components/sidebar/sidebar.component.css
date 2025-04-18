@@ -6,7 +6,7 @@
 }
 
 .sidebar {
-  width: 200px;
+  width: 220px;
   background: white;
   height: 100vh;
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
@@ -18,11 +18,18 @@
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  
+
+
+
 }
 
+
+
 .logo .fw-bold {
-  font-size: 18px;
+  font-size: 7rem;
+  font-weight: 1000;
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .sidebar_menu {
@@ -52,9 +59,9 @@
 .menu-item.active {
   background-color: #7f60f9;
   color: white;
- 
+
   border-bottom-left-radius: 0px;
- 
+
   border-top-right-radius: 25px;
   border-top-left-radius: 0px;
 }

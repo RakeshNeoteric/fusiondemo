@@ -10,6 +10,7 @@ import { Router, NavigationEnd } from '@angular/router';
 export class TopbarComponent {
   currentDateTime: string = '';
   currentPage: string = '';
+  currentDateOnly: string = '';
 
   constructor(private router: Router) {}
 
@@ -28,9 +29,22 @@ export class TopbarComponent {
       weekday: 'long',
       month: 'short',
       day: '2-digit',
+      year: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: true
+     
+    };
+
+    const dateOnlyOptions: Intl.DateTimeFormatOptions = {
+      weekday: 'long',
+      month: 'short',
+      day: '2-digit',
       year: 'numeric'
     };
     this.currentDateTime = now.toLocaleDateString('en-US', options);
+    this.currentDateOnly = now.toLocaleDateString('en-US', dateOnlyOptions);
   }
   extractCurrentPageFromUrl(url: string): void {
     const segments = url.split('/').filter(segment => segment); // Remove empty segments
