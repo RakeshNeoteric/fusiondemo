@@ -5,6 +5,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { CallsComponent } from './components/calls/calls.component';
 import { ClaimsComponent } from './components/claims/claims.component';
 import { AreacodeComponent } from './components/areacode/areacode.component';
+import { MatTableModule } from '@angular/material/table';
 
 const routes: Routes = [
 

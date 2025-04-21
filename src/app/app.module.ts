@@ -10,6 +10,13 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { CallsComponent } from './components/calls/calls.component';
 import { ClaimsComponent } from './components/claims/claims.component';
 import { AreacodeComponent } from './components/areacode/areacode.component';
+import { CallMenuComponent } from './components/call-menu/call-menu.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -24,7 +31,13 @@ import { AreacodeComponent } from './components/areacode/areacode.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [
     provideClientHydration(withEventReplay())

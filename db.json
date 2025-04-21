@@ -1,0 +1,26 @@
+{
+  "callRecords": [
+    {
+      "status": "C",
+      "callRef": "FMS0817719",
+      "caseNumber": "",
+      "callDate": "2021-06-02",
+      "callerName": "Jannied Sannie",
+      "deceasedName": "",
+      "client": "1Life-Agency1",
+      "type": "AVS-Legal Assist",
+      "funeralDate": ""
+    },
+    {
+      "status": "A",
+      "callRef": "FMS0817718",
+      "caseNumber": "",
+      "callDate": "2021-06-02",
+      "callerName": "Jannie Sannie",
+      "deceasedName": "",
+      "client": "1Life-Agency1",
+      "type": "AVS-Benefit Info AVS",
+      "funeralDate": ""
+    }
+  ]
+}
