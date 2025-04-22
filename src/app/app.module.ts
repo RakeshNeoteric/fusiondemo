@@ -17,6 +17,16 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card'; // For Card container
+import { FlexLayoutModule } from '@angular/flex-layout'; // For Flex Layout
+import { MatDividerModule } from '@angular/material/divider';
+import { StatsSummaryComponent } from './components/stats-summary/stats-summary.component';
+import { TotalSalesComponent } from './components/total-sales/total-sales.component';
+import { NetIncomeComponent } from './components/net-income/net-income.component';
+import { EarningsByLocationComponent } from './components/earnings-by-location/earnings-by-location.component';
+import { NgChartsModule } from 'ng2-charts';
+
+
 
 @NgModule({
   declarations: [
@@ -27,7 +37,12 @@ import { MatInputModule } from '@angular/material/input';
     DashboardComponent,
     CallsComponent,
     ClaimsComponent,
-    AreacodeComponent
+    AreacodeComponent,
+    CallMenuComponent,
+    StatsSummaryComponent,
+    TotalSalesComponent,
+    NetIncomeComponent,
+    EarningsByLocationComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +52,11 @@ import { MatInputModule } from '@angular/material/input';
     MatPaginatorModule,
     MatSortModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatCardModule,
+    FlexLayoutModule,
+    MatDividerModule,
+    NgChartsModule
   ],
   providers: [
     provideClientHydration(withEventReplay())

@@ -1,0 +1,9 @@
+<div class="chart card pinkbg">
+    <h3>Net Income</h3>
+    <div class="bar-container">
+      <div class="bar-item" *ngFor="let entry of monthlyIncome">
+        <span>{{ entry.month }}</span>
+        <div class="bar" [style.height.%]="entry.value * 10"></div>
+      </div>
+    </div>
+  </div>

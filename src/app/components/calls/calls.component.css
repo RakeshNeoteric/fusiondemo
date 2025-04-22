@@ -1,18 +1,20 @@
-.table-container {
-    padding: 20px;
-    overflow: auto;
-  }
-  
-  table {
+table.mat-elevation-z8 {
+    border-collapse: collapse;
     width: 100%;
-    border-spacing: 0;
   }
-  
-  .mat-header-cell, .mat-cell {
+
+  table.mat-elevation-z8 th, table.mat-elevation-z8 td {
+    border: 1px solid #ddd; /* Border for both rows and columns */
     padding: 8px;
+    text-align: left;
   }
-  
-  .mat-header-cell {
-    font-weight: bold;
+
+  table.mat-elevation-z8 th {
+    background-color: #f4f4f4;
   }
+
+  table.mat-elevation-z8 tr:nth-child(even) {
+    background-color: #f9f9f9; /* Add a background color for even rows */
+  }
+
   

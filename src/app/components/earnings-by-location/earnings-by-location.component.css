@@ -1,0 +1,20 @@
+.location-bar {
+    height: 10px;
+    background-color: mediumseagreen;
+    margin-bottom: 8px;
+  }
+  
+   .region-bars .bar {
+    height: 8px;
+    flex: 1;
+    margin-left: 1rem;
+    border-radius: 4px;
+  }
+  
+
+  .india { background: purple; }
+  .uk { background: pink; }
+  .usa { background: blue; }
+  .china { background: green; } 
+  
+  

@@ -1,0 +1,35 @@
+.summary-cards {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  .summary-cards .card {
+    flex: 1;
+    padding: 1rem;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .card.new-clients {
+    background: linear-gradient(to right, #ff512f, #f09819); /* same as .orange */
+  }
+  
+  .card.earnings {
+    background: linear-gradient(to right, #f953c6, #b91d73); /* same as .pink */
+  }
+  
+  .card.new-projects {
+    background: linear-gradient(to right, #396afc, #2948ff); /* same as .blue */
+  }
+  
+  .card.total-projects {
+    background: linear-gradient(to right, #11998e, #38ef7d); /* same as .green */
+  }
+  

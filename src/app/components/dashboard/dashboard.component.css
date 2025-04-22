@@ -1,0 +1,29 @@
+/* .dashboard-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  .dashboard-grid app-total-sales,
+  .dashboard-grid app-net-income,
+  .dashboard-grid app-earnings-by-location {
+    flex: 1 1 30%;
+    min-width: 300px;
+  } */
+  
+  .dashboard-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 1rem;
+    flex-wrap: nowrap;
+  }
+  .dashboard-grid app-total-sales,
+.dashboard-grid app-net-income,
+.dashboard-grid app-earnings-by-location {
+  width: 32%; /* Three items with spacing */
+  min-width: 300px; /* Optional, prevents squishing */
+}

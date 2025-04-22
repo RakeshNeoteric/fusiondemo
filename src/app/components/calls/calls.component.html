@@ -1,58 +1,59 @@
+<app-call-menu></app-call-menu>
 <div class="table-container">
-    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
   
-      <!-- Status Column -->
-      <ng-container matColumnDef="status">
-        <th mat-header-cell *matHeaderCellDef>Status</th>
-        <td mat-cell *matCellDef="let element">
-          😊 {{element.status}}
-        </td>
-      </ng-container>
+    <!-- Status Column -->
+    <ng-container matColumnDef="status">
+      <th mat-header-cell *matHeaderCellDef>Status</th>
+      <td mat-cell *matCellDef="let element">
+        😊 {{element.status}}
+      </td>
+    </ng-container>
+
+    <!-- Other Columns -->
+    <ng-container matColumnDef="callRef">
+      <th mat-header-cell *matHeaderCellDef>Call Ref #</th>
+      <td mat-cell *matCellDef="let element">{{element.callRef}}</td>
+    </ng-container>
   
-      <!-- Other Columns -->
-      <ng-container matColumnDef="callRef">
-        <th mat-header-cell *matHeaderCellDef>Call Ref #</th>
-        <td mat-cell *matCellDef="let element">{{element.callRef}}</td>
-      </ng-container>
+    <ng-container matColumnDef="caseNumber">
+      <th mat-header-cell *matHeaderCellDef>Case #</th>
+      <td mat-cell *matCellDef="let element">{{element.caseNumber}}</td>
+    </ng-container>
   
-      <ng-container matColumnDef="caseNumber">
-        <th mat-header-cell *matHeaderCellDef>Case #</th>
-        <td mat-cell *matCellDef="let element">{{element.caseNumber}}</td>
-      </ng-container>
+    <ng-container matColumnDef="callDate">
+      <th mat-header-cell *matHeaderCellDef>Call Date</th>
+      <td mat-cell *matCellDef="let element">{{element.callDate}}</td>
+    </ng-container>
   
-      <ng-container matColumnDef="callDate">
-        <th mat-header-cell *matHeaderCellDef>Call Date</th>
-        <td mat-cell *matCellDef="let element">{{element.callDate}}</td>
-      </ng-container>
+    <ng-container matColumnDef="callerName">
+      <th mat-header-cell *matHeaderCellDef>Caller Name</th>
+      <td mat-cell *matCellDef="let element">{{element.callerName}}</td>
+    </ng-container>
   
-      <ng-container matColumnDef="callerName">
-        <th mat-header-cell *matHeaderCellDef>Caller Name</th>
-        <td mat-cell *matCellDef="let element">{{element.callerName}}</td>
-      </ng-container>
+    <ng-container matColumnDef="deceasedName">
+      <th mat-header-cell *matHeaderCellDef>Deceased Name</th>
+      <td mat-cell *matCellDef="let element">{{element.deceasedName}}</td>
+    </ng-container>
   
-      <ng-container matColumnDef="deceasedName">
-        <th mat-header-cell *matHeaderCellDef>Deceased Name</th>
-        <td mat-cell *matCellDef="let element">{{element.deceasedName}}</td>
-      </ng-container>
+    <ng-container matColumnDef="client">
+      <th mat-header-cell *matHeaderCellDef>Client</th>
+      <td mat-cell *matCellDef="let element">{{element.client}}</td>
+    </ng-container>
   
-      <ng-container matColumnDef="client">
-        <th mat-header-cell *matHeaderCellDef>Client</th>
-        <td mat-cell *matCellDef="let element">{{element.client}}</td>
-      </ng-container>
+    <ng-container matColumnDef="type">
+      <th mat-header-cell *matHeaderCellDef>Type</th>
+      <td mat-cell *matCellDef="let element">{{element.type}}</td>
+    </ng-container>
   
-      <ng-container matColumnDef="type">
-        <th mat-header-cell *matHeaderCellDef>Type</th>
-        <td mat-cell *matCellDef="let element">{{element.type}}</td>
-      </ng-container>
+    <ng-container matColumnDef="funeralDate">
+      <th mat-header-cell *matHeaderCellDef>Funeral Date</th>
+      <td mat-cell *matCellDef="let element">{{element.funeralDate}}</td>
+    </ng-container>
   
-      <ng-container matColumnDef="funeralDate">
-        <th mat-header-cell *matHeaderCellDef>Funeral Date</th>
-        <td mat-cell *matCellDef="let element">{{element.funeralDate}}</td>
-      </ng-container>
+    <!-- Header and Row definitions -->
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   
-      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-  
-    </table>
-  </div>
-  
+  </table>
+</div>

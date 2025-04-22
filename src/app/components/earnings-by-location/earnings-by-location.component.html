@@ -1,0 +1,10 @@
+<div class="chart card greenbg">
+    <h3>Net Income</h3>
+    <div class="world-map"></div>
+    <ul class="region-bars">
+      <li *ngFor="let e of earnings">
+        <span>{{ e.country }}</span>
+        <div class="bar" [style.width.%]="e.value" [ngClass]="e.country.toLowerCase()"></div>
+      </li>
+    </ul>
+  </div>

@@ -1,6 +1,7 @@
 {
   "callRecords": [
     {
+      "id": 1,
       "status": "C",
       "callRef": "FMS0817719",
       "caseNumber": "",
@@ -12,6 +13,7 @@
       "funeralDate": ""
     },
     {
+      "id": 2,
       "status": "A",
       "callRef": "FMS0817718",
       "caseNumber": "",
@@ -21,6 +23,103 @@
       "client": "1Life-Agency1",
       "type": "AVS-Benefit Info AVS",
       "funeralDate": ""
+    },
+    {
+      "id": 3,
+      "status": "A",
+      "callRef": "FMS0817717",
+      "caseNumber": "CN20G0141",
+      "callDate": "2020-07-07",
+      "callerName": "Sue – Friend Thomas",
+      "deceasedName": "Anne Ghalagher",
+      "client": "OMGS-Policies",
+      "type": "FUN-Repat RSA",
+      "funeralDate": ""
+    },
+    {
+      "id": 4,
+      "status": "C",
+      "callRef": "FMS0817716",
+      "caseNumber": "",
+      "callDate": "2020-07-07",
+      "callerName": "Sidwell Bendeni",
+      "deceasedName": "",
+      "client": "OMGS-Policies",
+      "type": "FUN-Death Claim",
+      "funeralDate": ""
+    },
+    {
+      "id": 5,
+      "status": "C",
+      "callRef": "FMS0817715",
+      "caseNumber": "",
+      "callDate": "2020-07-07",
+      "callerName": "Manqoba Mango",
+      "deceasedName": "",
+      "client": "Sanlam Sky-Policies",
+      "type": "OTH-Redirect General",
+      "funeralDate": ""
+    },
+    {
+      "id": 6,
+      "status": "X",
+      "callRef": "FMS0817714",
+      "caseNumber": "",
+      "callDate": "2020-07-07",
+      "callerName": "Charrissa Miller",
+      "deceasedName": "",
+      "client": "OMGS-Policies",
+      "type": "AVS-Legal Assist",
+      "funeralDate": ""
+    },
+    {
+      "id": 7,
+      "status": "C",
+      "callRef": "FMS0817713",
+      "caseNumber": "CN20G0140",
+      "callDate": "2020-07-07",
+      "callerName": "Zodwa Xgowa – Aluyi-Kuhla Funerals",
+      "deceasedName": "Siyabonga Mafaya",
+      "client": "Megaphase - 2 Advanced (INACTIVE)",
+      "type": "AVS-Health Assist",
+      "funeralDate": "Sat, 2020-07-11"
+    },
+    {
+      "id": 8,
+      "status": "C",
+      "callRef": "FMS0817712",
+      "caseNumber": "CN20G0139",
+      "callDate": "2020-07-07",
+      "callerName": "Nadia Gouws-",
+      "deceasedName": "Bulelwa Nondonga",
+      "client": "OMGS-Societies",
+      "type": "FUN-Repat RSA",
+      "funeralDate": "Sat, 2020-07-11"
     }
+  ],
+  "summaryStats": {
+    "newClients": 236,
+    "earnings": 18306,
+    "newProjects": 1538,
+    "projects": 864
+  },
+  "sales": {
+    "direct": 2346,
+    "referral": 2108,
+    "affiliate": 1204
+  },
+  "monthlyIncome": [
+    { "month": "Jan", "value": 4.8 },
+    { "month": "Feb", "value": 3.2 },
+    { "month": "Mar", "value": 2.9 },
+    { "month": "Apr", "value": 6.5 },
+    { "month": "May", "value": 4.8 },
+    { "month": "Jun", "value": 10 }
+  ],
+  "countryEarnings": [
+    { "country": "India", "value": 95 },
+    { "country": "UK", "value": 60 },
+    { "country": "USA", "value": 70 },
+    { "country": "China", "value": 50 }
   ]
 }
