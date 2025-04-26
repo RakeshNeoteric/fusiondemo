@@ -1,10 +1,19 @@
-<div class="chart card greenbg">
-    <h3>Earnings by location</h3>
-    <div class="world-map"></div>
-    <ul class="region-bars">
-      <li *ngFor="let e of earnings">
-        <span>{{ e.country }}</span>
-        <div class="bar" [style.width.%]="e.value" [ngClass]="e.country.toLowerCase()"></div>
-      </li>
-    </ul>
+<div class="earning-container">
+  <h3>Earning by Location</h3>
+
+  
+  <img src="assets/icons/worldMap.jpg" alt="World Map" class="map-img" />
+
+  
+  <div class="bar-container" *ngFor="let earning of earnings">
+    <div class="label">
+      {{ earning.country }}
+    </div>
+    <div class="bar-wrapper">
+      <div class="bar" [ngStyle]="{ width: earning.percentage + '%', backgroundColor: earning.color }"></div>
+    </div>
+    <div class="percentage">
+      {{ earning.percentage }}%
+    </div>
   </div>
+</div> 

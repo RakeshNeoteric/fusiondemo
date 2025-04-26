@@ -1,20 +1,53 @@
-.location-bar {
-    height: 10px;
-    background-color: mediumseagreen;
-    margin-bottom: 8px;
-  }
-  
-   .region-bars .bar {
-    height: 8px;
-    flex: 1;
-    margin-left: 1rem;
-    border-radius: 4px;
-  }
-  
 
-  .india { background: purple; }
-  .uk { background: pink; }
-  .usa { background: blue; }
-  .china { background: green; } 
-  
-  
+
+.earning-container {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 16px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.bar-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.label {
+  width: 60px;
+  font-weight: bold;
+  color: #333;
+}
+
+.bar-wrapper {
+  flex: 1;
+  background-color: #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 12px;
+  margin: 0 10px;
+}
+
+.bar {
+  height: 100%;
+  border-radius: 8px;
+  transition: width 0.5s;
+}
+
+.percentage {
+  width: 40px;
+  text-align: right;
+  font-weight: bold;
+  color: #333;
+}

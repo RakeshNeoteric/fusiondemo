@@ -1,1 +1,52 @@
-<p>claims works!</p>
+<div class="container">
+    <input
+      type="text"
+      placeholder="Search claims..."
+      (keyup)="applyFilter($event)"
+      class="search-box"
+    />
+  
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Status</th>
+            <th>Progress</th>
+            <th>Claim Ref #</th>
+            <th>Call Ref #</th>
+            <th>Claim Date</th>
+            <th>Claimant Name</th>
+            <th>Deceased Name</th>
+            <th>Policy Number</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let claim of paginatedClaims">
+            <td>{{ claim.status }}</td>
+            <td>{{ claim.progress }}</td>
+            <td>{{ claim.claimRef }}</td>
+            <td>{{ claim.callRef }}</td>
+            <td>{{ claim.claimDate | date }}</td>
+            <td>{{ claim.claimantName }}</td>
+            <td>{{ claim.deceasedName }}</td>
+            <td>{{ claim.policyNumber }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <div class="pagination">
+      <button (click)="prevPage()" [disabled]="currentPage === 1">Prev</button>
+  
+      <button
+        *ngFor="let page of [].constructor(totalPages); let i = index"
+        (click)="goToPage(i + 1)"
+        [class.active]="currentPage === i + 1"
+      >
+        {{ i + 1 }}
+      </button>
+  
+      <button (click)="nextPage()" [disabled]="currentPage === totalPages">Next</button>
+    </div>
+  </div>
+  

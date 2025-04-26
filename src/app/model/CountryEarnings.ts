@@ -2,5 +2,6 @@
   
   export interface CountryEarnings {
     country: string;
-    value: number;
+    percentage: number;
+    color: string;
   }

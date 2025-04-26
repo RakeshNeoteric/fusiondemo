@@ -10,12 +10,27 @@ import { DashboardService } from '../../services/dashboard.service';
 })
 export class EarningsByLocationComponent implements OnInit {
   earnings: CountryEarnings[] = [];
+  // barChartData: ChartConfiguration<'bar'>['data'] = {
+  //   labels: [],
+  //   datasets: [{
+  //     data: [],
+  //     backgroundColor: [],
+  //     label: ''
+  //   }]
+  // };
+  // barChartOptions: ChartConfiguration<'bar'>['options'] = {
+  //   responsive: true,
+  //   indexAxis: 'y' // horizontal bar
+  // };
 
-  constructor(private service: DashboardService) {}
+  constructor(private earningService: DashboardService) {}
 
   ngOnInit(): void {
-    this.service.getCountryEarnings().subscribe((data) => {
+    this.earningService.getCountryEarnings().subscribe(data => {
       this.earnings = data;
+     // this.barChartData.labels = data.map(e => e.country);
+    //  this.barChartData.datasets[0].data = data.map(e => e.percentage);
+     // this.barChartData.datasets[0].backgroundColor = data.map(e => e.color);
     });
   }
 }

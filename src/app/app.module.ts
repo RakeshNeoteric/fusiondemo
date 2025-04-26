@@ -25,7 +25,12 @@ import { TotalSalesComponent } from './components/total-sales/total-sales.compon
 import { NetIncomeComponent } from './components/net-income/net-income.component';
 import { EarningsByLocationComponent } from './components/earnings-by-location/earnings-by-location.component';
 import { NgChartsModule } from 'ng2-charts';
-
+import { RouterModule, Routes } from '@angular/router';
+import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -56,7 +61,14 @@ import { NgChartsModule } from 'ng2-charts';
     MatCardModule,
     FlexLayoutModule,
     MatDividerModule,
-    NgChartsModule
+    NgChartsModule,
+    RouterModule,
+    MatListModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatButtonModule,
+    BrowserAnimationsModule
+    
   ],
   providers: [
     provideClientHydration(withEventReplay())

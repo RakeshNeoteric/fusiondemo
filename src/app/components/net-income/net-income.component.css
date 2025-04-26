@@ -1,33 +1,103 @@
+/* 
+ .chart {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 200px;
+  margin: 20px 0;
+  padding: 0 10px;
+}
+
+.bar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20px;
+}
+
 .bar {
-    background-color: cornflowerblue;
-    color: red;
-    padding: 4px;
-    margin-bottom: 5px;
-    text-align: right;
-  }
+  background: #3b82f6;
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+  transition: height 0.4s ease;
+}
 
-  .bar-container {
-    display: flex;
-    align-items: flex-end;
-    gap: 1rem;
-    height: 150px;
-    justify-content: space-around;
-  }
-  
-  .bar-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .bar {
-    width: 20px;
-    background-color: #007bff;
-    border-radius: 4px 4px 0 0;
-    transition: height 0.3s ease-in-out;
-  }
-  
-  
+.month-label {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #333;
+}
+
+.label {
+  font-style: italic;
+  color: gray;
+  font-size: 14px;
+  margin-top: 10px;
+}    */
+
+*{
+
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 
 
+}
 
+ .chart {
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.label {
+  text-align: center;
+  margin-top: 1rem;
+  color: #6c757d;
+}  
+
+/*  
+.chart {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.label {
+  font-style: italic;
+  color: gray;
+  font-size: 14px;
+  margin-top: 1rem;
+} */
