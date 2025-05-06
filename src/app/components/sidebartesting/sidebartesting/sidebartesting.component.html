@@ -1,0 +1,16 @@
+<div class="sidebar">
+  <div class="logo">
+    <div class="fw-bold fs-4 mb-3 ms-2">Fusion<span class="text-danger">.</span>Edge</div>
+  </div>
+
+  <div class="sidebar_menu">
+    <div *ngFor="let item of sidebarItems" 
+         class="menu-item" 
+         [routerLink]="item.route" 
+         routerLinkActive="active">
+      <img [src]="item.icon" class="icon-img" [alt]="item.name + ' Icon'" /> 
+      {{ item.name }}
+    </div>
+  </div>
+</div>
+  

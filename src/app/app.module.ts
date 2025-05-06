@@ -31,6 +31,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AgGridAngular } from 'ag-grid-angular';
+import { SidebartestingComponent } from './components/sidebartesting/sidebartesting/sidebartesting.component';
+import { AgGridModule } from 'ag-grid-angular';
+import { AllCommunityModule, ModuleRegistry } from 'ag-grid-community';
+import { LoginComponent } from './components/login/login.component';
+import { FormsModule } from '@angular/forms';
+// 👇 Register all modules
+ModuleRegistry.registerModules([AllCommunityModule]);
 
 
 @NgModule({
@@ -47,7 +55,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     StatsSummaryComponent,
     TotalSalesComponent,
     NetIncomeComponent,
-    EarningsByLocationComponent
+    EarningsByLocationComponent,
+    SidebartestingComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -67,7 +77,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatIconModule,
     MatToolbarModule,
     MatButtonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AgGridAngular,
+    AgGridModule,
+    FormsModule
     
   ],
   providers: [

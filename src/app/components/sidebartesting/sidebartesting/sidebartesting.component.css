@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .sidebar {
+    width: 220px;
+    background: white;
+    height: 100vh;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+    overflow-y: auto;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .logo .fw-bold {
+    font-size: 2rem;
+    font-weight: 1000;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .sidebar_menu {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 10px;
+    color: #888;
+    transition: background-color 0.2s;
+    border-radius: 25px;
+    margin: 2px 8px;
+  }
+  
+  .menu-item img.icon-img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .menu-item.active {
+    background-color: #7f60f9;
+    color: white;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 0px;
+  }
+  
+  .section {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 16px 4px;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .custom-divider {
+    height: 1px;
+    background-color: #ddd;
+    margin: 10px 0;
+    border: black 1px solid;
+  }
+  
